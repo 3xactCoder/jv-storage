@@ -17,7 +17,6 @@ public class StorageImpl<K, V> implements Storage<K, V> {
             }
         }
 
-
         if (count < MAX_SIZE) {
             keys[count] = key;
             values[count] = value;
