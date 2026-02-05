@@ -17,12 +17,6 @@ public class StorageImpl<K, V> implements Storage<K, V> {
             }
         }
 
-        for (int i = 0; i < count;i++) {
-            if (keys[i] == key) {
-                values[i] = value;
-                return;
-            }
-        }
 
         if (count < MAX_SIZE) {
             keys[count] = key;
